@@ -1,0 +1,18 @@
+{
+  "name": "files-cli",
+  "version": "0.0.1",
+  "description": "File system managment CLI app.",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "Vadim Yuldashbaev",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "meow": "^5.0.0"
+  }
+}
