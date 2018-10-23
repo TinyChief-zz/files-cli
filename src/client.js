@@ -6,7 +6,6 @@ var enquirer = new Enquirer()
 
 enquirer.register('radio', require('prompt-radio'))
 
-
 const client = {
   init: function ({ input, flags, help }) {
     if (flags.help) {
@@ -101,7 +100,6 @@ const client = {
         type: 'radio',
         choices: mapCommandToText.map(el => el.text)
       })
-      const self = this
       enquirer.ask(['all']).then(answers => {
         const { command, question } = mapCommandToText.find(
           el => el.text === answers.all
@@ -112,7 +110,7 @@ const client = {
 
         enquirer.ask(['inputPath']).then(answers => {
           client.commands[command](answers.inputPath)
-        }) 
+        })
       })
     }
   }

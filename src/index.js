@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-'use strict'
+
 const meow = require('meow')
 const help = require('./help')
 const fs = require('fs')

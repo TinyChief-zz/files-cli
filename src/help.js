@@ -1,7 +1,8 @@
+/* eslint-disable*/
 const chalk = require('chalk')
 const pkg = require('../package.json')
 const colors = {
-	header: 'magentaBright'
+  header: 'magentaBright'
 }
 
 module.exports = chalk`
