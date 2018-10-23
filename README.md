@@ -6,7 +6,7 @@ App to manage your files and directories using only `command line`, `terminal`. 
 Installation
 ------------
 
-`$ npm install -g files-cli`
+`$ npm install -g files-folders-cli`
 
 Available features:
 -------------------
@@ -27,7 +27,7 @@ $ files [command] [flags]
 Commands
 
   remove [options] <path>	deletes file
-  new [options] <path>		creates new file
+  create [options] <path>		creates new file
 
 Options
 
@@ -35,19 +35,19 @@ Options
   -v --version	0.0.1
 
   remove [options]
-  -f --force 	Will remove without any prompt
-  -t --try     	Shows prompt before action
+  -f --force 	  Will remove without any prompt
+  -p --prompt     Shows prompt before action
 
-  new [options]
-  -f --force 	Will overwrite if already exists
-  -t --try     	Shows prompt before action
+  create [options]
+  -f --force 	  Will overwrite if already exists
+  -p --prompt     Shows prompt before action
 ```
 
 ### Examples
 ```
-files new styles/header/main.css
+$ files new styles/header/main.css
 // or
-files remove assets/fonts
+$ files remove assets/fonts
 ```
 
 License

@@ -1,5 +1,5 @@
 {
-  "name": "files-cli",
+  "name": "files-folders-cli",
   "version": "0.0.1",
   "description": "File system managment CLI app.",
   "main": "src/index.js",
