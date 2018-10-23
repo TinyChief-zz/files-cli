@@ -2,17 +2,39 @@
   "name": "files-cli",
   "version": "0.0.1",
   "description": "File system managment CLI app.",
-  "main": "bin/index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "build": "babel src -d build"
   },
   "keywords": [
     "cli"
   ],
+  "bin": {
+    "files": "build/index.js"
+  },
   "author": "Vadim Yuldashbaev",
   "license": "MIT",
+  "devDependecies": {
+    "babel-cli": "^6.26.0",
+    "@babel/core": "^7.0.0",
+    "@babel/polyfill": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.7.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  },
   "dependencies": {
     "chalk": "^2.4.1",
-    "meow": "^5.0.0"
+    "enquirer": "^1.0.3",
+    "meow": "^5.0.0",
+    "mocha": "^5.2.0",
+    "prompt-choices": "^5.0.0",
+    "prompt-list": "^3.2.0",
+    "prompt-radio": "^1.2.1"
   }
 }

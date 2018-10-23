@@ -8,10 +8,8 @@ package-lock.json
 yarn.lock
 
 node_modules
-build
 
 *.pid
 *.sh
 
 .gitlogs
-libs
